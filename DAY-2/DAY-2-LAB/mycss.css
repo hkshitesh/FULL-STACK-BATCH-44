@@ -1,0 +1,11 @@
+body {
+    background-color: aqua;
+  }  
+  h1 {
+    color: red;
+    margin-left: 20px;
+  }
+   p{
+    color: blue;
+    text-align: center;
+   }
