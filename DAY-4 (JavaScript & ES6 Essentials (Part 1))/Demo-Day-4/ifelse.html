@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <script>
+        function vote() {
+            let age = parseInt(document.getElementById("age").value);
+            if (age >18) {
+                document.getElementById("output").innerHTML = "Your age is " + age + "Your are eligible for Voting";
+            }
+            else if (age==18){
+                document.getElementById("output").innerHTML = "Your age is " + age + "Your are just eligible for Voting";
+            }
+            else {
+                document.getElementById("output").innerHTML = "Your age is " + age + "Your are not eligible for Voting";
+            }
+        }
+    </script>
+    <center>
+        <input type="text" id="age"><br>
+        <input type="submit" onclick="vote()" value="Click">
+        <div id="output"></div>
+    </center>
+</body>
+
+</html>

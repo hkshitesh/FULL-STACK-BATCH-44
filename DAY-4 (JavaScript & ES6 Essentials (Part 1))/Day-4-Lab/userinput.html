@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="myfun.js"></script>
+    </head>
+    <body>
+        <p id="res">Result will display here</p>
+        <script>
+            function show()
+            {
+                len =parseInt(document.getElementById("length").value);                
+                br = parseInt(document.getElementById("breadth").value); 
+                res = area(len , br);
+                document.getElementById("res").innerHTML="The Area is: "+res;
+                alert("The Area is: "+res);
+            }  
+        </script>
+    
+        <p>Length: <input type ="text" id = "length"> </p>
+        <p>Breadth: <input type ="text" id = "breadth"> </p>
+        <p><input type ="button" value="Calculate Area" onclick="show()"</p>
+      
+    </body>
+</html>
