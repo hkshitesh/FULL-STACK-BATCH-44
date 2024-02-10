@@ -1,0 +1,15 @@
+
+<html>
+<body>
+    <h1 id="myHeading">Hello, DOM!</h1>
+    <p id="para">This is a paragraph.</p>
+    
+    <script>        
+        const myHeading = document.getElementById('myHeading');        
+        const newAttribute = document.createAttribute('my-attribute');       
+        newAttribute.value = 'This is a custom attribute';
+        myHeading.setAttributeNode(newAttribute);
+        document.getElementById("para").innerHTML= myHeading.getAttribute('my-attribute')
+    </script>
+</body>
+</html>
